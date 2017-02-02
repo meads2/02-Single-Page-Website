@@ -8,7 +8,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   height: 100%; }
 
-h1, h2, p {
+h1, h2, p, blockquote {
   margin: 0;
   padding: 0; }
 
@@ -67,7 +67,7 @@ h1, h2, p {
   vertical-align: middle; }
 
 .navbar--links {
-  width: 140px;
+  width: 125px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -127,6 +127,27 @@ h1, h2, p {
   margin-top: 24px; }
   .article--link:hover, .sidebar--link:hover {
     background: #fa9a3a; }
+
+.quote {
+  font-family: 'Times New Roman', serif;
+  position: relative;
+  z-index: 1;
+  padding: 24px 24px 24px 40px;
+  margin: 16px 0 16px 0;
+  color: rgba(66, 68, 74, 0.6);
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  border-left: 8px solid #EAECEF; }
+  .quote::before, .quote::after {
+    font-size: 80px;
+    opacity: .3;
+    z-index: 0; }
+  .quote::before {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    content: open-quote; }
 
 .sidebar--meta {
   display: flex;

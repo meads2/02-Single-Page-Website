@@ -68,7 +68,7 @@ h1,h2,p,blockquote
   margin-bottom: 48px
 
 .navbar--logo
-  width: 50px
+  width: 30px
   height: 100%
 
 .navbar--logo_img
@@ -138,25 +138,21 @@ h1,h2,p,blockquote
     background: darken($primary, 6%)
 
 .quote
-  font-family: 'Times New Roman', serif
-  position: relative
-  z-index: 1
-  padding: 24px 24px 24px 40px
-  margin: 16px 0 16px 0
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif
+  margin: 16px 0
   color: $body-text
-  font-size: 24px
+  font-size: 22px
   text-align: center
-  line-height: 40px
-  border-left: 8px solid #EAECEF
+  line-height: 34px
+  border-left: 4px solid #EAECEF
   &::before,&::after
-    font-size: 80px
-    opacity: .3
-    z-index: 0
+    font-size: 56px
+    font-family: cursive
+    opacity: .5
   &::before
-    position: absolute
-    top: 30px
-    left: 30px
     content: open-quote
+  &::after
+    content: close-quote
 
 // sidebar
 .sidebar--meta
